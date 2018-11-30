@@ -22,23 +22,35 @@
         <input type="text" name="lastname" id="lastname" placeholder="Smith" required>
 
         <!-- Gender -->
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male">
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
 
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
 
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other">
+        </div>
 
         <!-- Email & Password-->
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="your email">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="your email">
 
-        <label for="password2">Password:</label>
-        <input type="password" id="password2" placeholder="your password2" pattern=".{5,10}" required title="Password must be between 5 & 10 characters.">
+            <label for="password2">Password:</label>
+            <input type="password" id="password2" placeholder="your password2" pattern=".{5,10}" required title="Password must be between 5 & 10 characters.">
+        </div>
 
         <!-- Birthday -->
+        <label>
+            Sign
+            <select name="Sign" id="sign">
+                <option value="sign">Virgo</option>
+                <option value="sign">aquarius</option>
+            </select>
+        </label>
+
         <label for="month">Birthday:</label>
         <select name="Month" id="month">
             <option>Month</option>
@@ -84,8 +96,7 @@
         <label for="terms">I agree to the terms and conditions</label>
         <input type="checkbox" name="terms" id="terms">
 
-        <button type="submit">Submit</button>
-
+        <input type="submit" value="Submit">
 
     </form>
     
