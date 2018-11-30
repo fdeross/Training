@@ -16,10 +16,10 @@
 
         <!-- Name -->
         <label for="firstname">First Name:</label>
-        <input type="text" name="firstname" id="firstname" placeholder="John">
+        <input type="text" name="firstname" id="firstname" placeholder="John" required>
 
         <label for="lastname">Last Name:</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Smith">
+        <input type="text" name="lastname" id="lastname" placeholder="Smith" required>
 
         <!-- Gender -->
         <label for="male">Male</label>
@@ -36,8 +36,26 @@
         <input type="email" name="email" id="email" placeholder="your email">
 
         <label for="password">Password:</label>
-        <input type="password" id="password" placeholder="your password">
+        <input type="password" id="password" placeholder="your password" required minlength="5" maxlength="10">
 
+        <!-- Birthday -->
+        <label for="month">Birthday:</label>
+        <select name="Month" id="month">
+            <option>Month</option>
+            <option value="">January</option>
+        </select>
+        <select name="Day" id="day">
+            <option>Day</option>
+        </select>
+        <select name="Year" id="year">
+            <option>Year</option>
+        </select>
+
+        <!-- Terms & Conditions -->
+        <label for="terms">I agree to the terms and conditions</label>
+        <input type="checkbox" name="terms" id="terms">
+
+        <button type="submit">Submit</button>
 
 
     </form>
